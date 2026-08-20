@@ -12,9 +12,9 @@ Hospitals face financial penalties when patients are readmitted within 30 days o
 
 ## Approach/Methodology
 - **Cleaning**: Replaced placeholder missing values with NULLS, removed a column with about 97% missing data, kept only one encounter per patient to avoid duplicate bias, and removed patients who were inactive or were discharged to hospice
-- Exploratory analysis: Established baseline readmission rates by age, admission type, and diagnosis category.
-- Advanced analysis: Built a reusable high-risk patient group with a CTE, applied window function to rank patients by risk, grouped them by medication use and number of diagnoses, and found diagnosis categories with above average readmission rates.
-- Findings: Summarized the results into four key findings that connect back to the main business problem.
+- **Exploratory analysis**: Established baseline readmission rates by age, admission type, and diagnosis category.
+- **Advanced analysis**: Built a reusable high-risk patient group with a CTE, applied window function to rank patients by risk, grouped them by medication use and number of diagnoses, and found diagnosis categories with above average readmission rates.
+- **Findings**: Summarized the results into four key findings that connect back to the main business problem.
 
 ## Key SQL Techniques Used
 - CTEs to stage a clean, reusable risk cohort across multiple queries
